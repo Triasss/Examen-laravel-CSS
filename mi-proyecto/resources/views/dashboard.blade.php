@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-<meta charset="UTF-8">
-<title>DAW</title>
-
-<style>
-
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-}
-
-header {
-  background: #111;
-  color: white;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>DAW</title>
+    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        header {
+            background: #111;
+            color: white;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-  <h1>GESTOR DELS MEUS PROJECTES</h1>
+    <h1>GESTOR DELS MEUS PROJECTES</h1>
 </header>
 
-<main class="layout">
-<div>
-  <aside class="sidebar">
-    <h2>Llistat del meus projectes</h2>
-    <p>Projecte 1</p>
-    <p>Projecte 2</p>
-    <p>Projecte 3</p>
-    <p>Projecte 4</p>
-  </aside>
+<main>
+    <div class="layout">
 
-  <article class="featured">
-    Projecte 1: És el projecte més nou 
-  </article>
+        <aside class="sidebar">
+            <h2>Llistat del meus projectes</h2>
 
-  <section class="news">
-    <article class="card">Tasca 1 del projecte seleccionat </article>
-    <article class="card">Tasca 2 del projecte seleccionat</article>
-    <article class="card">Tasca 3 del projecte seleccionat</article>
-    <article class="card">Tasca 4 del projecte seleccionat</article>
-    <article class="card">Tasca 5 del projecte seleccionat</article>
-    <article class="card">Tasca 6 del projecte seleccionat </article>
-  </section>
+            <div id="project-list">
+            </div>
+        </aside>
 
+        <article class="featured" id="featured">
+        </article>
+
+        <section class="news" id="task-list">
+            <article class="card">
+            </article>
+        </section>
+
+    </div>
 </main>
 
 <footer>
-  <p>Examen DAW - Layout Responsive sense media queries</p>
+    <p>Examen DAW - Layout Responsive sense media queries</p>
 </footer>
+
+<script src="{{ asset('js/dashboard.js') }}"></script>
 
 </body>
 </html>

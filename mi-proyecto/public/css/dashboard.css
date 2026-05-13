@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    gap: 5px;
+}
+
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: clamp(0.8rem, 2vw, 1.5rem);
+}
+
+header h1 {
+    font-size: clamp(1.3rem, 4vw, 2.3rem);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    padding-inline: clamp(0.3rem, 1vw, 1rem);
+}
+
+.layout {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 10px;
+
+    min-height: calc(100vh - 170px);
+}
+
+.sidebar {
+    background: white;
+    border-radius: 6px;
+    padding: clamp(0.8rem, 2vw, 1rem);
+    border: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.project-item {
+    padding: 0.2rem 0;
+    font-size: clamp(0.75rem, 1vw, 0.95rem);
+    cursor: pointer;
+}
+
+.project-item:hover {
+    text-decoration: underline;
+}
+
+.featured {
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: clamp(1rem, 3vw, 2rem);
+
+    min-height: 500px;
+
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: #333;
+}
+
+.news {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+
+    gap: 10px;
+    align-content: start;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    min-height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+
+    text-align: center;
+
+    font-size: clamp(0.75rem, 1vw, 0.95rem);
+
+    color: #333;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+
+    padding: clamp(0.5rem, 1vw, 0.8rem);
+
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
+}
