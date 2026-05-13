@@ -1,52 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="/css/dashboard.css">
+<meta charset="UTF-8">
+<title>DAW</title>
+
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  background: #111;
+  color: white;
+}
+
+</style>
 </head>
-<body data-page="dashboard">
-    <header class="topbar">
-        <div class="brand">API CRUD - Panel</div>
-        <nav>
-            <a href="/categories-page">Categorías</a>
-            <a href="/products-page">Productos</a>
-            <a href="/orders-page">Órdenes</a>
-            <a href="/login-page">Login</a>
-        </nav>
-        <button id="btnLogout" class="secondary">Cerrar sesión</button>
-    </header>
 
-    <main>
-        <section class="card">
-            <h1 class="page-title">Panel de control</h1>
-            <p class="small-text">Accede al CRUD completo usando llamadas a la API. Cada recurso tiene creación, edición, borrado y vista de detalles.</p>
-        </section>
+<body>
 
-        <section class="hero-grid">
-            <article class="card">
-                <h2>Categorías</h2>
-                <p>Gestiona categorías, crea, edita, borra y consulta sus detalles.</p>
-                <p class="small-text">Total: <span id="countCategories">0</span></p>
-                <a class="primary" href="/categories-page">Ir a Categorías</a>
-            </article>
-            <article class="card">
-                <h2>Productos</h2>
-                <p>Gestiona productos con su categoría, precio y stock.</p>
-                <p class="small-text">Total: <span id="countProducts">0</span></p>
-                <a class="primary" href="/products-page">Ir a Productos</a>
-            </article>
-            <article class="card">
-                <h2>Órdenes</h2>
-                <p>Administra órdenes del usuario actual y actualiza estado o cantidad.</p>
-                <p class="small-text">Total: <span id="countOrders">0</span></p>
-                <a class="primary" href="/orders-page">Ir a Órdenes</a>
-            </article>
-        </section>
-    </main>
+<header>
+  <h1>GESTOR DELS MEUS PROJECTES</h1>
+</header>
 
-    <script src="/js/common.js"></script>
-    <script src="/js/dashboard.js"></script>
+<main class="layout">
+<div>
+  <aside class="sidebar">
+    <h2>Llistat del meus projectes</h2>
+    <p>Projecte 1</p>
+    <p>Projecte 2</p>
+    <p>Projecte 3</p>
+    <p>Projecte 4</p>
+  </aside>
+
+  <article class="featured">
+    Projecte 1: És el projecte més nou 
+  </article>
+
+  <section class="news">
+    <article class="card">Tasca 1 del projecte seleccionat </article>
+    <article class="card">Tasca 2 del projecte seleccionat</article>
+    <article class="card">Tasca 3 del projecte seleccionat</article>
+    <article class="card">Tasca 4 del projecte seleccionat</article>
+    <article class="card">Tasca 5 del projecte seleccionat</article>
+    <article class="card">Tasca 6 del projecte seleccionat </article>
+  </section>
+
+</main>
+
+<footer>
+  <p>Examen DAW - Layout Responsive sense media queries</p>
+</footer>
+
 </body>
 </html>
