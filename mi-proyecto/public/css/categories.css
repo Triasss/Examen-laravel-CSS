@@ -1,0 +1,9 @@
+@import url('/css/crud.css');
+
+.card table {
+    width: 100%;
+}
+
+#detailsPanel {
+    min-height: 160px;
+}

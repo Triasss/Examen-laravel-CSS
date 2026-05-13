@@ -1,0 +1,9 @@
+@import url('/css/crud.css');
+
+#productForm {
+    margin-bottom: 1.5rem;
+}
+
+#detailsPanel {
+    min-height: 160px;
+}

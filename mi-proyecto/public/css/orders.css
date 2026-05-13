@@ -1,0 +1,9 @@
+@import url('/css/crud.css');
+
+#orderForm {
+    margin-bottom: 1.5rem;
+}
+
+.badge {
+    text-transform: capitalize;
+}
