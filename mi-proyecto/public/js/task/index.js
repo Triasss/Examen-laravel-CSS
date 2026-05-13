@@ -26,8 +26,6 @@ async function getTasks() {
                 <td>${t.projects_id}</td>
                 <td>
                     <a href="/task/show/${t.id}">Ver</a>
-                    <a href="/task/edit/${t.id}">Editar</a>
-                    <button onclick="deleteTask(${t.id})">Eliminar</button>
                 </td>
             </tr>
         `;

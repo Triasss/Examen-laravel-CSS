@@ -9,8 +9,6 @@
 
 <h1>Tareas</h1>
 
-<a href="{{ route('task.create') }}">Crear tarea</a>
-
 <table border="1">
     <thead>
         <tr>
@@ -25,6 +23,7 @@
         <tr><td colspan="5">Cargando...</td></tr>
     </tbody>
 </table>
+<a href="{{ route('dashboard.page') }}">Volver dashboard</a>
 
 <script src="{{ asset('js/task/index.js') }}"></script>
 

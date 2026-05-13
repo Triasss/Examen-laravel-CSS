@@ -10,6 +10,7 @@
 <h1>Proyectos</h1>
 
 <a href="{{ route('project.create') }}">Crear proyecto</a>
+<br><br>
 
 <table border="1">
     <thead>
@@ -27,6 +28,8 @@
         <tr><td colspan="7">Cargando...</td></tr>
     </tbody>
 </table>
+<br>
+<a href="{{ route('dashboard.page') }}">Volver dashboard</a>
 
 <script src="{{ asset('js/project/index.js') }}"></script>
 

@@ -18,7 +18,6 @@
 <p><strong>Completada:</strong> <span id="t-completada"></span></p>
 <p><strong>Proyecto ID:</strong> <span id="t-projects_id"></span></p>
 
-<a id="edit-link" href="#">Editar esta tarea</a>
 
 <script>
     const TASK_ID = {{ $id }};
