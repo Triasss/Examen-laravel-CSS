@@ -235,13 +235,3 @@ tbody tr:hover {
     color: var(--text-muted);
     font-size: 0.95rem;
 }
-
-@media (max-width: 640px) {
-    .topbar {
-        grid-template-columns: 1fr;
-    }
-
-    .page-title {
-        text-align: center;
-    }
-}
